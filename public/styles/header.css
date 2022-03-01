@@ -1,0 +1,10 @@
+.imgandname {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgoldenrod;
+  background-image: url("https://www.transparenttextures.com/patterns/my-little-plaid.png");
+}
