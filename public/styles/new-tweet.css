@@ -1,0 +1,21 @@
+.tweetcollector {
+  display: flex;
+  border: 0;
+  background-color: darkgoldenrod;
+  border-bottom: 5px solid darkgrey;
+}
+
+.buttonandcounter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweetbutton {
+  background-color: blue;
+}
+
+.tweetcent {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+}
