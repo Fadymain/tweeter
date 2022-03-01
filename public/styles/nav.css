@@ -1,0 +1,25 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #4056A1;
+  height: 120px;
+  color: #FFFFFF;
+  padding: 1.5em;
+  /* padding-right: 1.5em; */
+}
+
+.navBarLogo {
+  font-family: "Bungee";
+}
+
+.rightsidenav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.arrow {
+  color: red;
+}
