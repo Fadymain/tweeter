@@ -1,0 +1,47 @@
+.postTweetSect {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweetName {
+  display: flex;
+  flex-grow: 3;
+}
+
+.tweetedText {
+  display: flex;
+  border-bottom: groove;
+}
+
+.tweetedBottom {
+  display: flex;
+}
+
+.daysAgo {
+  flex-grow: 2;
+}
+
+.leftSideTweet {
+  display: flex;
+}
+
+#tweetSection {
+  border: 1px solid black;
+  padding: 1em;
+}
+
+#tweetSection:hover {
+  box-shadow: 10px 5px 5px black;
+}
+
+.fa-heart:hover {
+  color: lime;
+}
+
+.fa-flag:hover {
+  color: lime;
+}
+
+.fa-retweet:hover {
+  color: lime;
+}
