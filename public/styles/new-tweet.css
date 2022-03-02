@@ -15,7 +15,7 @@
   background-color: blue;
 }
 
-.tweetcent {
+#tweetcent {
   display: flex;
   flex-direction: column;
   padding: 1.5em;
