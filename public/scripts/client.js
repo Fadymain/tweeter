@@ -41,6 +41,17 @@ for (let tweet of tweets) {
 }
 }
 
+$("#tweetcent").submit(function(event) {
+  event.preventDefault();
+  const serializeData = $(this).serialize();
+  console.log("serializedData", serializeData);
+  $.post("/tweets/", serializeData, (response) => {
+    
+    console.log("response", response);
+  })
+})
+
+
 const createTweetElement = function(tweet) {
 let $tweet = `
 <article class="article-section">
