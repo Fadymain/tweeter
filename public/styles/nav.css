@@ -1,4 +1,4 @@
-.navBar {
+nav {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -10,11 +10,11 @@
   /* padding-right: 1.5em; */
 }
 
-.navBarLogo {
+nav>span {
   font-family: "Bungee";
 }
 
-.rightsidenav {
+nav>div {
   align-items: center;
   display: flex;
   justify-content: center;
