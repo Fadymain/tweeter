@@ -25,12 +25,18 @@
   display: flex;
 }
 
-#tweetSection {
+.article-section {
   border: 1px solid black;
   padding: 1em;
+  margin-top: 1em;
 }
 
-#tweetSection:hover {
+/* #tweet-section {
+  border: 1px solid black;
+  padding: 1em;
+} */
+
+.article-section:hover {
   box-shadow: 10px 5px 5px black;
 }
 
