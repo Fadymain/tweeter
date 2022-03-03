@@ -6,45 +6,48 @@
 
 $(document).ready(function () {
 
-const renderTweets = function(tweets) {
-
-for (let tweet of tweets) {
-  const $jTweets = createTweetElement(tweet);
-  $("#tweet-section").prepend($jTweets)
-}
-} 
-
-$("#tweetcent").submit(function(event) {
-  event.preventDefault();
-  const serializeData = $(this).serialize();
-  console.log("serializedData", serializeData);
-  if (serializeData === "text=" || serializeData.length > 140) {
-    alert("Input Error");
-  } else {
-    $.post("/tweets/", serializeData, (response) => {
-      loadTweets();
-      console.log("response", response);
-    })
+  const renderTweets = function (tweets) {
+    $("#tweet-section").empty()
+    for (let tweet of tweets) {
+      const $jTweets = createTweetElement(tweet);
+      $("#tweet-section").prepend($jTweets)
+    }
   }
-})
 
-const loadTweets = function() {
-  $.ajax({
-    url: "/tweets/",
-    method: "GET",
-    success: (data) => {
-      console.log("data", data);
-      renderTweets(data);
-    },
-    error: (err) => {
-      console.log("err", err);
+  $("#tweetcent").submit(function (event) {
+    event.preventDefault();
+    const serializeData = $(this).serialize();
+    console.log("serializedData", serializeData);
+    if (serializeData === "text=" || serializeData.length > 140) {
+      alert("Input Error");
+    } else {
+      $.post("/tweets", serializeData, (response) => {
+        console.log("response", response);
+        loadTweets()
+      })
     }
   })
-}
-loadTweets();
 
-const createTweetElement = function(tweet) {
-let $tweet = `
+  const loadTweets = function () {
+    
+    $.ajax({
+      url: '/tweets', 
+      method: "GET",
+      success: function(data) {
+        console.log("success", data)
+      }
+    })
+      .then(function(data) {
+        renderTweets(data);
+      })
+      .catch((error) => {
+        console.log("Error :", error);
+      });
+  }
+  loadTweets();
+
+  const createTweetElement = function (tweet) {
+    let $tweet = `
 <article class="article-section">
 <header class="postTweetSect">
   <div class="leftSideTweet">
@@ -68,9 +71,9 @@ let $tweet = `
 </article>
 `
 
-  return $tweet;
-}
+    return $tweet;
+  }
 
-  
+
 })
 
