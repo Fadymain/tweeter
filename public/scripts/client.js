@@ -18,14 +18,28 @@ $(document).ready(function () {
     event.preventDefault();
     const serializeData = $(this).serialize();
     console.log("serializedData", serializeData);
-    if (serializeData === "text=" || serializeData.length > 140) {
-      alert("Input Error");
+
+    if (serializeData === "text=") {
+      $("#error").text("You cannot submit an empty tweet")
+    } else if (serializeData.length > 140) {
+      $("#error").text("Yore tweet has too many characters")
     } else {
       $.post("/tweets", serializeData, (response) => {
+        $("#error").empty();
+        this.reset();
         console.log("response", response);
         loadTweets()
       })
     }
+
+    // if (serializeData === "text=" || serializeData.length > 140) {
+    //   alert("Input Error");
+    // } else {
+    //   $.post("/tweets", serializeData, (response) => {
+    //     console.log("response", response);
+    //     loadTweets()
+    //   })
+    // }
   })
 
   const loadTweets = function () {
