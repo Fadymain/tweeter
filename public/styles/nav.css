@@ -3,12 +3,12 @@ nav {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  background-color: #4056A1;
   height: 120px;
   color: #FFFFFF;
   padding: 1.5em;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 nav>span {
@@ -24,4 +24,14 @@ nav>div {
 
 .arrow {
   color: red;
+}
+
+
+/* Navbar media querry for desktop */
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056A1;
+    position: absolute;
+  }
 }
