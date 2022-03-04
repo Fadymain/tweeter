@@ -28,13 +28,10 @@
 #error {
   color: #D8000C;
   font-family: FontAwesome;
-  /* content: '\f057'; */
+
   font-size: 24px;
-  /* background-color: #fce4e4; */
-  /* border: 1px solid #fcc2c3; */
   float: left;
   padding: 20px 30px;
-  /* font-size: 13px; */
   font-weight: bold;
   line-height: 20px;
   text-shadow: 1px 1px rgba(250,250,250,.3);

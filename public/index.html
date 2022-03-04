@@ -35,32 +35,36 @@
         <i class="fa fa-angle-double-down arrow" aria-hidden="true"></i>
       </div>
     </nav>
-    <header class="imgandname">
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Your Name</h2>
-      </div>
-    </header>
-  
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets" id="tweetcent">
-          <div id="error"></div>
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text" class="tweetcollector"></textarea>
-          <div class="buttonandcounter">
-            <button class="tweetbutton" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <div id="tweet-section"></div>
-    </main>
+    <div  class="resp-box">
+
+      <header class="imgandname">
+        <div>
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div>
+            <h2>Your Name</h2>
+        </div>
+      </header>
+    
+  
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <form method="POST" action="/tweets" id="tweetcent">
+            <div id="error"></div>
+            <h2>Compose Tweet</h2>
+            <label for="tweet-text">What are you humming about?</label>
+            <textarea name="text" id="tweet-text" class="tweetcollector"></textarea>
+            <div class="buttonandcounter">
+              <button class="tweetbutton" type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        <div id="tweet-section"></div>
+      </main>
+    </div>
   </body>
 </html>
