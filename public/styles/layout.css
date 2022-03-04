@@ -30,6 +30,24 @@ body {
   margin: auto;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+.resp-box {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+ /* Media query for desktop */
+
+ @media only screen and (min-width: 1024px){
+   .resp-box {
+     display: flex;
+     flex-direction: row;
+     margin-top: 120px;
+   }
+
+   .container {
+     margin: 1em;
+   }
+ }
