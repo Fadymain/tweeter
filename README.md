@@ -5,9 +5,9 @@ Tweeter is a simple, single-page Twitter clone. It renders an in-browser interfa
 
 ## Final Product
 
-!["tweeter feed in desktop view typing tweet"](#)
-!["tweeter feed in desktop view after posting tweet"](#)
-!["tweeter feed in tablet view"](#)
+!["tweeter feed in desktop view typing tweet"](https://github.com/Fadymain/tweeter/blob/master/docs/tweeter-desktop-pre-tweet.png)
+!["tweeter feed in desktop view after posting tweet"](https://github.com/Fadymain/tweeter/blob/master/docs/tweeter-desktop-post-tweet.png)
+!["tweeter feed in tablet view"](https://github.com/Fadymain/tweeter/blob/master/docs/tweeter-tablet-view.png)
 
 ## Getting Started
 
