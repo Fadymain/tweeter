@@ -1,8 +1,13 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone. It renders an in-browser interface and interact with a JSON API. The client will be a Single Page Application (SPA) that has all the functionality on one page and communicates asynchronously with the server
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+
+## Final Product
+
+!["tweeter feed in desktop view typing tweet"](#)
+!["tweeter feed in desktop view after posting tweet"](#)
+!["tweeter feed in tablet view"](#)
 
 ## Getting Started
 
@@ -16,3 +21,4 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
